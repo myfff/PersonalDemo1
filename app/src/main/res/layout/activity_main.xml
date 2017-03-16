@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.personaldemo1.MainActivity">
+    <View.NoScolllerViewpager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <!-- <android.support.v4.view.ViewPager
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:id="@+id/vp"></android.support.v4.view.ViewPager>-->
+    <!--需要加入一个RadioGroup的背景将4个图标显示出来-->
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal">
+        <!--下面可以抽取为样式，在此先不抽取-->
+        <RadioButton
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:checked="true"
+            android:drawableTop="@drawable/re1_seletor"
+
+
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:paddingBottom="3dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <!-- <item name="android:button">@null</item>
+         <item name="android:background">@android:color/transparent</item>
+         <item name="android:textSize">15sp</item>
+         <item name="android:drawablePadding">3dp</item>/>-->
+
+        <RadioButton
+            android:id="@+id/news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="新闻"
+            android:drawableTop="@drawable/rb2_selector"
+
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:paddingBottom="3dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:drawableTop="@drawable/rb3_selector"
+
+
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:paddingBottom="3dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/smart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="讨论"
+            android:drawableTop="@drawable/rb4_selector"
+
+
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:paddingBottom="3dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+</LinearLayout>

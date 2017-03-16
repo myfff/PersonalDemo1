@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--主题为什么颜色整个都会什么色，但每一个控件的部分又会相对他的父容器的颜色-->
+    <!--  android:layout_height="?attr/actionBarSize" 宽为actionbar
+     app:navigationIcon="@mipmap/ic_launcher" 点击弹出侧边栏
+
+       app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" toolbar主题为深色   因为刚才我们指定了整个applition的主题为淡
+       此时ttoolbar上的元素都是淡色主题
+       但弹出菜单项变淡不好看，再一次单独指明为黑色    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+     -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@mipmap/ic_launcher"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="101dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/textView2" />
+
+</RelativeLayout>

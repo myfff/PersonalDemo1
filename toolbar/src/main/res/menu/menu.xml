@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--toolbar中的action，只会显示图标，menu中的显示文字-->
+    <item
+        android:id="@+id/add"
+        android:title="添加"
+        android:icon="@android:drawable/btn_minus"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/select"
+        android:title="搜索好友"
+        android:icon="@android:drawable/btn_minus"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/setting"
+        android:title="设置"
+        android:icon="@android:drawable/btn_minus"
+        app:showAsAction="never"/>
+
+</menu>
